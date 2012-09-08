@@ -23,12 +23,16 @@ public class Main {
         }
         
         //insertion sort
-        Insertion insertion = new Insertion(toBeSorted);
-        int[] sorted = insertion.sort();
+        //Insertion insertion = new Insertion(toBeSorted);
+        //int[] sorted = insertion.sort();
+        
+        //merge sort
+        MergeSort merge = new MergeSort(toBeSorted);
+        int[] sorted = merge.sort();
         
         for(int i = 0; i < sorted.length; i++)
         {
-            System.out.println(sorted[i]);
+            System.out.print(sorted[i] + " ");
         }
     }
 }

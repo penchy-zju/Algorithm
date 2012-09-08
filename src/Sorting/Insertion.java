@@ -28,15 +28,6 @@ public class Insertion {
     //this is the sort function
     public int[] sort() throws UnSortableException
     {
-        if(numbers == null)
-        {
-            throw new UnSortableException();
-        }
-        else if(numbers.length == 0)
-        {
-            throw new UnSortableException("The elements of array is 0!");
-        }
-        
         for(int i = 1; i < numbers.length; i++)
         {
             int theOne = numbers[i];

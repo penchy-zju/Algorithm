@@ -9,14 +9,16 @@ System.out.println(e.getMessage());
 Insertion.java implements the insertion sorting algorithm.
 
 int[] toBeSorted = null;
-//........
+/*........*/
 Insertion insertion = new Insertion(toBeSorted);
 toBeSorted = insertion.sort();
 ------------------------------------------------------------------
 MergeSort.java implements the merge sorting algorithm.
 
 int[] toBeSorted = null;
-//........
+/*........*/
 MergeSort merge = new MergeSort(toBeSorted);
 toBeSorted = merge.sort();
 ------------------------------------------------------------------
+
+

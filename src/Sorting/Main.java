@@ -27,8 +27,12 @@ public class Main {
         //int[] sorted = insertion.sort();
         
         //merge sort
-        MergeSort merge = new MergeSort(toBeSorted);
-        int[] sorted = merge.sort();
+        //MergeSort merge = new MergeSort(toBeSorted);
+        //int[] sorted = merge.sort();
+        
+        //quick sort
+        QuickSort qst = new QuickSort(toBeSorted);
+        int[] sorted = qst.sort(); 
         
         for(int i = 0; i < sorted.length; i++)
         {

@@ -11,7 +11,7 @@ import java.util.Scanner;
  * @author penchy
  */
 public class Main {
-    public static void main(String[] args) throws UnSortableException
+    public static void main(String[] args) throws UnSortableException, Exception
     {
         Scanner scanner = new Scanner(System.in);
         int num = scanner.nextInt();
@@ -31,8 +31,23 @@ public class Main {
         //int[] sorted = merge.sort();
         
         //quick sort
-        QuickSort qst = new QuickSort(toBeSorted);
-        int[] sorted = qst.sort(); 
+        //QuickSort qst = new QuickSort(toBeSorted);
+        //int[] sorted = qst.sort(); 
+        
+        //heapsort
+        Heap heap = new Heap(toBeSorted);
+        heap.minHeapBuild();
+        int[] sorted = heap.heapSortSmaller();
+        
+        for(int i = 0; i < sorted.length; i++)
+        {
+            System.out.print(sorted[i] + " ");
+        }
+        
+        System.out.println();
+        
+        heap.maxHeapBuild();
+        sorted = heap.heapSortLarger();
         
         for(int i = 0; i < sorted.length; i++)
         {
